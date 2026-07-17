@@ -73,6 +73,19 @@
   .tblock h3{font-size:14.5px;font-weight:600;margin:0 0 3px;}
   .tblock p{font-size:13.5px;color:var(--ink-soft);margin:0;}
   .tip{display:inline-block;margin-top:6px;font-size:12px;color:var(--jade-deep);background:#e2f0e9;padding:2px 8px;border-radius:3px;}
+  .option-block{border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px 6px;margin-bottom:18px;background:var(--paper);}
+  .option-block.recommended{border-color:var(--jade);}
+  .option-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px;}
+  .option-num{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;background:var(--ink);color:#fff;padding:3px 9px;border-radius:12px;}
+  .option-block.recommended .option-num{background:var(--jade);}
+  .option-title{font-family:var(--serif);font-weight:600;font-size:16px;}
+  .option-star{font-family:var(--mono);font-size:11px;color:var(--jade-deep);margin-left:auto;}
+  .option-note{font-size:12.5px;color:var(--ink-soft);margin:10px 0 16px;padding-top:10px;border-top:1px solid var(--line);}
+  .track{border-top:1px solid var(--line);padding-top:12px;margin-top:4px;}
+  .track:first-child{border-top:none;margin-top:0;}
+  .track-label{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+  .track-label.family::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--jade);display:inline-block;}
+  .track-label.solo::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;}
   .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:10px;}
   .card{background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
   .card h3{font-family:var(--serif);font-size:18px;margin:0 0 12px;}
@@ -115,24 +128,14 @@
 </header>
 
 <div class="arrival-note">
-  <div class="rail-label" style="margin-bottom:14px;">Two Possible Arrival Conditions</div>
-  <div class="info-grid">
-    <div class="card">
-      <h3>1 — You first, Sun PM · Family Mon AM</h3>
-      <p><b>Suggested handling:</b> you transfer into Seoul alone (simplest solo route — no need to navigate Busan by yourself), spend a quiet solo evening, then meet family in Seoul Monday morning once they land. Everyone takes the KTX down to Busan together that day.</p>
-      <p><b>Cost:</b> family lands a day later than the original plan, so — with the return flight fixed at Sept 27 — the trip is a day shorter. The open buffer day near the end absorbs it; the alternative is pushing the return flight to Sept 28.</p>
-    </div>
-    <div class="card" style="position:relative;border-color:var(--jade);">
-      <span class="tip" style="position:absolute;top:-11px;right:18px;">★ Recommended</span>
-      <h3>2 — Family first, Sun AM · You Sun PM</h3>
-      <p><b>Suggested handling:</b> family lands ~8:45am and clears immigration first. Rather than head off alone, they rest at the airport — coffee, a proper meal, maybe duty-free — until you land around 12:45pm. Once you're through, <b>everyone flies to Busan together</b> on the same domestic flight that afternoon.</p>
-      <p><b>Why it's better:</b> same-day landing means nothing gets cut — the full week holds intact, including both Busan nights, the whole Gyeongju day, and the buffer day near the end.</p>
-    </div>
+  <div class="card">
+    <h3>Arrival day has two possible shapes</h3>
+    <p>Depending on whether you land before family or the same day as them, Day 1 plays out differently — full timing for both is laid out as <b>Option 1</b> and <b>Option 2</b> right at the start of Day 1 below, with Option 2 (same-day landing) recommended.</p>
   </div>
-  <p style="font-size:12.5px;color:var(--ink-soft);margin-top:14px;">This document is built around Condition 2. If Condition 1 ends up being the actual flights, the day-by-day details below need reshuffling — happy to build that version out fully if it's the one that happens.</p>
 </div>
 
 <nav class="day-nav">
+
   <div class="day-nav-inner">
     <a href="#d1">Day 1 · Sun 21</a>
     <a href="#d2">Day 2 · Mon 22</a>
@@ -149,27 +152,83 @@
   <section class="day-card" id="d1">
     <div class="stub"><div class="num">01</div><div class="date">SUN<br>21 SEP</div><div class="loc transit">Incheon → Busan</div></div>
     <div class="content">
-      <h2>Family lands first, waits for you, then everyone flies to Busan together</h2>
-      <p class="day-summary">No solo travel for anyone — just a few hours' wait at the airport before the whole group heads down as one.</p>
-      <ol class="timeline">
-        <li class="tblock"><span class="time">08:45</span><div><h3>Family lands Incheon (ICN)</h3></div></li>
-        <li class="tblock"><span class="time">08:45–10:15</span><div><h3>Family: immigration &amp; baggage claim</h3></div></li>
-        <li class="tblock"><span class="time">10:15–12:45</span><div><h3>Family rests at the airport</h3><p>Coffee, a proper sit-down meal, maybe duty-free — no rush, plenty of seating at ICN.</p></div></li>
-        <li class="tblock"><span class="time">12:45</span><div><h3>You land Incheon (ICN)</h3><p>Adjust to your actual flight time.</p></div></li>
-        <li class="tblock"><span class="time">12:45–14:15</span><div><h3>You: immigration &amp; baggage claim</h3></div></li>
-        <li class="tblock"><span class="time">14:30</span><div><h3>Reunite at arrivals</h3></div></li>
-        <li class="tblock"><span class="time">15:00</span><div><h3>Domestic flight ICN → Gimhae, together</h3><p>~1h05m — one booking, all four of you.</p></div></li>
-        <li class="tblock"><span class="time">16:10</span><div><h3>Land Gimhae</h3></div></li>
-        <li class="tblock"><span class="time">16:50</span><div><h3>Transfer to Haeundae hotel</h3><p>~40 min.</p></div></li>
-        <li class="tblock"><span class="time">17:30</span><div><h3>Check in, rest</h3></div></li>
-        <li class="tblock"><span class="time">18:30</span><div><h3>Dinner — Gwangalli seafood street</h3><p>Grilled shellfish stalls facing Gwangan Bridge.</p><span class="tip">Bridge lights up after dark — good first-night photo</span></div></li>
-        <li class="tblock"><span class="time">21:00</span><div><h3>Back to hotel, early night</h3><p>Let the jet lag catch up before tomorrow's full day.</p></div></li>
-      </ol>
+      <h2>Arrival day — depends how the flights land</h2>
+      <p class="day-summary">Two ways this can go, depending on whether you land before family or the same day as them. Whichever happens, the destination is the same: everyone in Busan together by evening.</p>
+
+      <div class="option-block">
+        <div class="option-head">
+          <span class="option-num">Option 1</span>
+          <span class="option-title">You land first — Sun PM, family Mon AM</span>
+        </div>
+        <div class="track">
+          <div class="track-label solo">Sun 21 — you</div>
+          <ol class="timeline">
+            <li class="tblock"><span class="time">13:00</span><div><h3>Land Incheon (ICN)</h3></div></li>
+            <li class="tblock"><span class="time">13:00–14:30</span><div><h3>Immigration &amp; baggage</h3></div></li>
+            <li class="tblock"><span class="time">15:00</span><div><h3>AREX to Seoul</h3><p>~1h — simplest solo transfer, no need to navigate Busan alone.</p></div></li>
+            <li class="tblock"><span class="time">16:15</span><div><h3>Check in Seoul hotel, rest</h3></div></li>
+            <li class="tblock"><span class="time">19:00</span><div><h3>Solo dinner &amp; walk — Myeongdong</h3></div></li>
+            <li class="tblock"><span class="time">21:30</span><div><h3>Early night</h3><p>Family lands early tomorrow.</p></div></li>
+          </ol>
+        </div>
+        <div class="track">
+          <div class="track-label family">Mon 22 — family, then together</div>
+          <ol class="timeline">
+            <li class="tblock"><span class="time">08:45</span><div><h3>Family lands ICN, immigration</h3></div></li>
+            <li class="tblock"><span class="time">10:45</span><div><h3>AREX to Seoul</h3></div></li>
+            <li class="tblock"><span class="time">11:45</span><div><h3>Reunite at Seoul Station</h3></div></li>
+            <li class="tblock"><span class="time">13:00</span><div><h3>KTX Seoul → Busan, together</h3><p>~2h30m.</p></div></li>
+            <li class="tblock"><span class="time">15:30</span><div><h3>Arrive Busan, check in Haeundae hotel</h3></div></li>
+            <li class="tblock"><span class="time">18:30</span><div><h3>Dinner — Gwangalli seafood street</h3></div></li>
+          </ol>
+        </div>
+        <p class="option-note"><b>Cost:</b> family lands a day later than the original plan, so with the return flight fixed at Sept 27, the trip runs one day shorter — the open buffer day near the end absorbs it, or the return shifts to Sept 28.</p>
+      </div>
+
+      <div class="option-block recommended">
+        <div class="option-head">
+          <span class="option-num">Option 2</span>
+          <span class="option-title">Everyone lands the same day — family AM, you PM</span>
+          <span class="option-star">★ Recommended</span>
+        </div>
+        <ol class="timeline">
+          <li class="tblock"><span class="time">08:45</span><div><h3>Family lands Incheon (ICN)</h3></div></li>
+          <li class="tblock"><span class="time">08:45–10:15</span><div><h3>Family: immigration &amp; baggage claim</h3></div></li>
+          <li class="tblock"><span class="time">10:15–12:45</span><div><h3>Family rests at the airport</h3><p>Coffee, a proper sit-down meal, maybe duty-free — no rush.</p></div></li>
+          <li class="tblock"><span class="time">12:45</span><div><h3>You land Incheon (ICN)</h3><p>Adjust to your actual flight time.</p></div></li>
+          <li class="tblock"><span class="time">12:45–14:15</span><div><h3>You: immigration &amp; baggage claim</h3></div></li>
+          <li class="tblock"><span class="time">14:30</span><div><h3>Reunite at arrivals</h3></div></li>
+          <li class="tblock"><span class="time">15:00</span><div><h3>AREX to Seoul, together</h3><p>~1h.</p></div></li>
+          <li class="tblock"><span class="time">16:15</span><div><h3>Check in — Seoul hotel</h3><p>Somewhere near a KTX station makes tomorrow's ride to Busan easier.</p></div></li>
+          <li class="tblock"><span class="time">17:30</span><div><h3>Rest, freshen up</h3></div></li>
+          <li class="tblock"><span class="time">19:00</span><div><h3>Dinner together — Myeongdong</h3><p>Low-key first meal, everyone's had a long day.</p></div></li>
+          <li class="tblock"><span class="time">21:30</span><div><h3>Early night</h3><p>KTX to Busan tomorrow morning — no need to rush tonight.</p></div></li>
+        </ol>
+        <p class="option-note"><b>Why it's better:</b> nobody travels or sleeps alone, and resting overnight before a relaxed KTX down to Busan beats stacking another flight on top of a long-haul one. The full week still holds intact — see Day 2 for the ride down.</p>
+      </div>
     </div>
   </section>
 
   <section class="day-card" id="d2">
-    <div class="stub"><div class="num">02</div><div class="date">MON<br>22 SEP</div><div class="loc">Busan</div></div>
+    <div class="stub"><div class="num">02</div><div class="date">MON<br>22 SEP</div><div class="loc transit">Seoul → Busan</div></div>
+    <div class="content">
+      <h2>KTX down to Busan</h2>
+      <p class="day-summary">A relaxed morning start, well-rested, then the ride down — no repeat airport security, and everyone's luggage stays with them the whole way.</p>
+      <ol class="timeline">
+        <li class="tblock"><span class="time">09:00</span><div><h3>Breakfast, check out</h3></div></li>
+        <li class="tblock"><span class="time">10:00</span><div><h3>KTX Seoul → Busan</h3><p>~2h30m — book 4 seats together in advance. Window seats make the countryside stretch worth it.</p></div></li>
+        <li class="tblock"><span class="time">12:30</span><div><h3>Arrive Busan, transfer to Haeundae hotel</h3></div></li>
+        <li class="tblock"><span class="time">13:30</span><div><h3>Check in, lunch nearby</h3></div></li>
+        <li class="tblock"><span class="time">15:00</span><div><h3>Rest, or an easy walk — Haeundae Beach</h3><p>Flat boardwalk, low effort for a travel day.</p></div></li>
+        <li class="tblock"><span class="time">18:30</span><div><h3>Dinner — Gwangalli seafood street</h3><p>Grilled shellfish stalls facing Gwangan Bridge.</p><span class="tip">Bridge lights up after dark — good first-night-in-Busan photo</span></div></li>
+        <li class="tblock"><span class="time">21:00</span><div><h3>Back to hotel</h3></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="day-card" id="d3">
+    <div class="stub"><div class="num">03</div><div class="date">TUE<br>23 SEP</div><div class="loc">Busan</div></div>
+
     <div class="content">
       <h2>Busan, full day</h2>
       <p class="day-summary">The city's signature stops, paced with a market lunch in the middle.</p>
@@ -187,7 +246,7 @@
     </div>
   </section>
 
-  <section class="day-card" id="d3">
+  <section class="day-card" id="d4">
     <div class="stub"><div class="num">03</div><div class="date">TUE<br>23 SEP</div><div class="loc transit">Busan → Gyeongju → Seoul</div></div>
     <div class="content">
       <h2>Old capital, then the fast train north</h2>
