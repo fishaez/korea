@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Korea Trip — Sept 21–27, 2026</title>
+<title>Korea Trip — Sept 20–27, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -86,7 +86,7 @@
   .track-label{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:8px;display:flex;align-items:center;gap:6px;}
   .track-label.family::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--jade);display:inline-block;}
   .track-label.solo::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block;}
-  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:10px;}
+  .info-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:20px;margin-top:10px;}
   .card{background:var(--paper-raised);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
   .card h3{font-family:var(--serif);font-size:18px;margin:0 0 12px;}
   .card ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-soft);}
@@ -110,125 +110,78 @@
 <body>
 
 <header class="hero">
-  <div class="eyebrow">Family Trip · 7D6N</div>
+  <div class="eyebrow">Family Trip · 8D7N</div>
   <h1>Korea, End to End</h1>
-  <p class="sub">Sept 21–27, 2026 · <b>4 travelers</b> — parents, sister, me. Family lands first, waits for me at the airport, then we all fly to Busan together the same afternoon. Two nights in Busan, Gyeongju as a day trip, then Seoul for the back half before the flight home.</p>
+  <p class="sub">Sept 20–27, 2026 · <b>4 travelers</b> — parents, sister, me. Family lands first and waits for me at the airport; then we all take the KTX to Busan together the same day. Three nights in Busan with Gyeongju done as a luggage-free round trip, then Seoul for the back half before the flight home.</p>
 
   <div class="rail-wrap">
     <div class="rail-label">The Route</div>
     <div class="rail">
       <div class="rail-track"></div>
-      <div class="stop"><div class="dot"></div><div class="city">Incheon</div><div class="day">Sun 21 · both land</div></div>
-      <div class="stop"><div class="dot"></div><div class="city">Busan</div><div class="day">Sun 21 – Tue 23 · 2N</div></div>
-      <div class="stop transit"><div class="dot"></div><div class="city">Gyeongju</div><div class="day">Tue 23 · day trip</div></div>
-      <div class="stop"><div class="dot"></div><div class="city">Seoul</div><div class="day">Tue 23 – Sat 27 · 4N</div></div>
-      <div class="stop"><div class="dot"></div><div class="city">Incheon</div><div class="day">Sat 27 · depart</div></div>
+      <div class="stop"><div class="dot"></div><div class="city">Incheon</div><div class="day">Sun 20 · both land</div></div>
+      <div class="stop"><div class="dot"></div><div class="city">Busan</div><div class="day">Sun 20 – Wed 23 · 3N</div></div>
+      <div class="stop transit"><div class="dot"></div><div class="city">Gyeongju</div><div class="day">Tue 22 · round trip, no bags</div></div>
+      <div class="stop"><div class="dot"></div><div class="city">Seoul</div><div class="day">Wed 23 – Sun 27 · 4N</div></div>
+      <div class="stop transit"><div class="dot"></div><div class="city">Gapyeong</div><div class="day">Sat 26 · Nami Island day trip</div></div>
+      <div class="stop"><div class="dot"></div><div class="city">Incheon</div><div class="day">Sun 27 · depart</div></div>
     </div>
   </div>
 </header>
 
 <div class="arrival-note">
   <div class="card">
-    <h3>Arrival day has two possible shapes</h3>
-    <p>Depending on whether you land before family or the same day as them, Day 1 plays out differently — full timing for both is laid out as <b>Option 1</b> and <b>Option 2</b> right at the start of Day 1 below, with Option 2 (same-day landing) recommended.</p>
+    <h3>Everyone lands Sunday — one straightforward plan</h3>
+    <p>Family lands first and waits at the airport (~4 hrs, no rush) until you land. Then the whole group takes AREX + KTX straight to Busan the same day — one long first day, but no second flight and no overnight stop needed along the way.</p>
+  </div>
+</div>
+
+<div class="arrival-note">
+  <div class="card">
+    <h3>Gyeongju without the luggage problem</h3>
+    <p>Rather than carry bags through temples and a museum before a night train, Gyeongju is now a <b>round trip from Busan</b> (Day 3) — luggage stays at the Busan hotel, same room both nights. The move to Seoul becomes its own clean travel day afterward (Day 4).</p>
   </div>
 </div>
 
 <nav class="day-nav">
 
   <div class="day-nav-inner">
-    <a href="#d1">Day 1 · Sun 21</a>
-    <a href="#d2">Day 2 · Mon 22</a>
-    <a href="#d3">Day 3 · Tue 23</a>
-    <a href="#d4">Day 4 · Wed 24</a>
-    <a href="#d5">Day 5 · Thu 25</a>
-    <a href="#d6">Day 6 · Fri 26</a>
-    <a href="#d7">Day 7 · Sat 27</a>
+    <a href="#d1">Day 1 · Sun 20</a>
+    <a href="#d2">Day 2 · Mon 21</a>
+    <a href="#d3">Day 3 · Tue 22</a>
+    <a href="#d4">Day 4 · Wed 23</a>
+    <a href="#d5">Day 5 · Thu 24</a>
+    <a href="#d6">Day 6 · Fri 25</a>
+    <a href="#d7">Day 7 · Sat 26</a>
+    <a href="#d8">Day 8 · Sun 27</a>
   </div>
 </nav>
 
 <main>
 
   <section class="day-card" id="d1">
-    <div class="stub"><div class="num">01</div><div class="date">SUN<br>21 SEP</div><div class="loc transit">Incheon → Busan</div></div>
+    <div class="stub"><div class="num">01</div><div class="date">SUN<br>20 SEP</div><div class="loc transit">Incheon → Busan</div></div>
     <div class="content">
-      <h2>Arrival day — depends how the flights land</h2>
-      <p class="day-summary">Two ways this can go, depending on whether you land before family or the same day as them. Whichever happens, the destination is the same: everyone in Busan together by evening.</p>
-
-      <div class="option-block">
-        <div class="option-head">
-          <span class="option-num">Option 1</span>
-          <span class="option-title">You land first — Sun PM, family Mon AM</span>
-        </div>
-        <div class="track">
-          <div class="track-label solo">Sun 21 — you</div>
-          <ol class="timeline">
-            <li class="tblock"><span class="time">13:00</span><div><h3>Land Incheon (ICN)</h3></div></li>
-            <li class="tblock"><span class="time">13:00–14:30</span><div><h3>Immigration &amp; baggage</h3></div></li>
-            <li class="tblock"><span class="time">15:00</span><div><h3>AREX to Seoul</h3><p>~1h — simplest solo transfer, no need to navigate Busan alone.</p></div></li>
-            <li class="tblock"><span class="time">16:15</span><div><h3>Check in Seoul hotel, rest</h3></div></li>
-            <li class="tblock"><span class="time">19:00</span><div><h3>Solo dinner &amp; walk — Myeongdong</h3></div></li>
-            <li class="tblock"><span class="time">21:30</span><div><h3>Early night</h3><p>Family lands early tomorrow.</p></div></li>
-          </ol>
-        </div>
-        <div class="track">
-          <div class="track-label family">Mon 22 — family, then together</div>
-          <ol class="timeline">
-            <li class="tblock"><span class="time">08:45</span><div><h3>Family lands ICN, immigration</h3></div></li>
-            <li class="tblock"><span class="time">10:45</span><div><h3>AREX to Seoul</h3></div></li>
-            <li class="tblock"><span class="time">11:45</span><div><h3>Reunite at Seoul Station</h3></div></li>
-            <li class="tblock"><span class="time">13:00</span><div><h3>KTX Seoul → Busan, together</h3><p>~2h30m.</p></div></li>
-            <li class="tblock"><span class="time">15:30</span><div><h3>Arrive Busan, check in Haeundae hotel</h3></div></li>
-            <li class="tblock"><span class="time">18:30</span><div><h3>Dinner — Gwangalli seafood street</h3></div></li>
-          </ol>
-        </div>
-        <p class="option-note"><b>Cost:</b> family lands a day later than the original plan, so with the return flight fixed at Sept 27, the trip runs one day shorter — the open buffer day near the end absorbs it, or the return shifts to Sept 28.</p>
-      </div>
-
-      <div class="option-block recommended">
-        <div class="option-head">
-          <span class="option-num">Option 2</span>
-          <span class="option-title">Everyone lands the same day — family AM, you PM</span>
-          <span class="option-star">★ Recommended</span>
-        </div>
-        <ol class="timeline">
-          <li class="tblock"><span class="time">08:45</span><div><h3>Family lands Incheon (ICN)</h3></div></li>
-          <li class="tblock"><span class="time">08:45–10:15</span><div><h3>Family: immigration &amp; baggage claim</h3></div></li>
-          <li class="tblock"><span class="time">10:15–12:45</span><div><h3>Family rests at the airport</h3><p>Coffee, a proper sit-down meal, maybe duty-free — no rush.</p></div></li>
-          <li class="tblock"><span class="time">12:45</span><div><h3>You land Incheon (ICN)</h3><p>Adjust to your actual flight time.</p></div></li>
-          <li class="tblock"><span class="time">12:45–14:15</span><div><h3>You: immigration &amp; baggage claim</h3></div></li>
-          <li class="tblock"><span class="time">14:30</span><div><h3>Reunite at arrivals</h3></div></li>
-          <li class="tblock"><span class="time">15:00</span><div><h3>AREX to Seoul, together</h3><p>~1h.</p></div></li>
-          <li class="tblock"><span class="time">16:15</span><div><h3>Check in — Seoul hotel</h3><p>Somewhere near a KTX station makes tomorrow's ride to Busan easier.</p></div></li>
-          <li class="tblock"><span class="time">17:30</span><div><h3>Rest, freshen up</h3></div></li>
-          <li class="tblock"><span class="time">19:00</span><div><h3>Dinner together — Myeongdong</h3><p>Low-key first meal, everyone's had a long day.</p></div></li>
-          <li class="tblock"><span class="time">21:30</span><div><h3>Early night</h3><p>KTX to Busan tomorrow morning — no need to rush tonight.</p></div></li>
-        </ol>
-        <p class="option-note"><b>Why it's better:</b> nobody travels or sleeps alone, and resting overnight before a relaxed KTX down to Busan beats stacking another flight on top of a long-haul one. The full week still holds intact — see Day 2 for the ride down.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="day-card" id="d2">
-    <div class="stub"><div class="num">02</div><div class="date">MON<br>22 SEP</div><div class="loc transit">Seoul → Busan</div></div>
-    <div class="content">
-      <h2>KTX down to Busan</h2>
-      <p class="day-summary">A relaxed morning start, well-rested, then the ride down — no repeat airport security, and everyone's luggage stays with them the whole way.</p>
+      <h2>Everyone lands Sunday, straight down to Busan by KTX</h2>
+      <p class="day-summary">Family waits at the airport for you, then the whole group heads to Busan together the same day — by train, not a second flight.</p>
+      <span class="flag">⚑ Long first day — but no overnight stop needed</span>
       <ol class="timeline">
-        <li class="tblock"><span class="time">09:00</span><div><h3>Breakfast, check out</h3></div></li>
-        <li class="tblock"><span class="time">10:00</span><div><h3>KTX Seoul → Busan</h3><p>~2h30m — book 4 seats together in advance. Window seats make the countryside stretch worth it.</p></div></li>
-        <li class="tblock"><span class="time">12:30</span><div><h3>Arrive Busan, transfer to Haeundae hotel</h3></div></li>
-        <li class="tblock"><span class="time">13:30</span><div><h3>Check in, lunch nearby</h3></div></li>
-        <li class="tblock"><span class="time">15:00</span><div><h3>Rest, or an easy walk — Haeundae Beach</h3><p>Flat boardwalk, low effort for a travel day.</p></div></li>
-        <li class="tblock"><span class="time">18:30</span><div><h3>Dinner — Gwangalli seafood street</h3><p>Grilled shellfish stalls facing Gwangan Bridge.</p><span class="tip">Bridge lights up after dark — good first-night-in-Busan photo</span></div></li>
-        <li class="tblock"><span class="time">21:00</span><div><h3>Back to hotel</h3></div></li>
+        <li class="tblock"><span class="time">08:45</span><div><h3>Family lands Incheon (ICN)</h3></div></li>
+        <li class="tblock"><span class="time">08:45–10:15</span><div><h3>Family: immigration &amp; baggage claim</h3></div></li>
+        <li class="tblock"><span class="time">10:15–12:45</span><div><h3>Family rests at the airport</h3><p>Coffee, a proper sit-down meal, maybe duty-free — no rush.</p></div></li>
+        <li class="tblock"><span class="time">12:45</span><div><h3>You land Incheon (ICN)</h3><p>Adjust to your actual flight time.</p></div></li>
+        <li class="tblock"><span class="time">12:45–14:15</span><div><h3>You: immigration &amp; baggage claim</h3></div></li>
+        <li class="tblock"><span class="time">14:30</span><div><h3>Reunite at arrivals</h3></div></li>
+        <li class="tblock"><span class="time">15:00</span><div><h3>AREX to Seoul Station</h3><p>~1 hour, direct express.</p></div></li>
+        <li class="tblock"><span class="time">16:15</span><div><h3>KTX Seoul → Busan</h3><p>~2h30m — book 4 seats together in advance. A meal or snack on board helps since dinner will be late.</p></div></li>
+        <li class="tblock"><span class="time">18:45</span><div><h3>Arrive Busan, transfer to Haeundae hotel</h3></div></li>
+        <li class="tblock"><span class="time">19:30</span><div><h3>Check in, drop bags</h3></div></li>
+        <li class="tblock"><span class="time">20:00</span><div><h3>Simple dinner near the hotel</h3><p>Keep it low-key — everyone's had a long day.</p></div></li>
       </ol>
     </div>
   </section>
 
-  <section class="day-card" id="d3">
-    <div class="stub"><div class="num">03</div><div class="date">TUE<br>23 SEP</div><div class="loc">Busan</div></div>
-
+  <section class="day-card" id="d2">
+    <div class="stub"><div class="num">02</div><div class="date">MON<br>21 SEP</div><div class="loc">Busan</div></div>
     <div class="content">
       <h2>Busan, full day</h2>
       <p class="day-summary">The city's signature stops, paced with a market lunch in the middle.</p>
@@ -246,50 +199,64 @@
     </div>
   </section>
 
-  <section class="day-card" id="d4">
-    <div class="stub"><div class="num">03</div><div class="date">TUE<br>23 SEP</div><div class="loc transit">Busan → Gyeongju → Seoul</div></div>
+  <section class="day-card" id="d3">
+    <div class="stub"><div class="num">03</div><div class="date">TUE<br>22 SEP</div><div class="loc transit">Gyeongju (day trip)</div></div>
     <div class="content">
-      <h2>Old capital, then the fast train north</h2>
-      <span class="flag">⚑ Longest day of the trip — see note below</span>
-      <p class="day-summary">Check out with bags, day-trip through Gyeongju, then continue straight to Seoul by KTX instead of backtracking to Busan.</p>
+      <h2>Gyeongju — round trip, no luggage</h2>
+      <p class="day-summary">Bags stay at the Busan hotel — you keep the same room, so there's nothing to check out of or drag around all day.</p>
       <ol class="timeline">
-        <li class="tblock"><span class="time">07:30</span><div><h3>Breakfast, check out</h3><p>Bags come with you — no return to Busan tonight.</p></div></li>
-        <li class="tblock"><span class="time">08:15</span><div><h3>KTX Busan → Singyeongju</h3><p>~20–30 min.</p></div></li>
-        <li class="tblock"><span class="time">09:00</span><div><h3>Arrive Gyeongju, taxi to Bulguksa</h3></div></li>
-        <li class="tblock"><span class="time">09:30–11:00</span><div><h3>Bulguksa Temple</h3><p>UNESCO-listed, Korea's best-known Buddhist temple.</p></div></li>
-        <li class="tblock"><span class="time">11:00–12:00</span><div><h3>Seokguram Grotto</h3><p>Shuttle up, short uphill walk at the top.</p><span class="tip">Optional to skip if the group's tired — Bulguksa alone justifies the trip</span></div></li>
-        <li class="tblock"><span class="time">12:30</span><div><h3>Lunch in Gyeongju</h3><p>Local specialty: ssambap (leaf-wrapped rice) or bibim-guksu.</p></div></li>
-        <li class="tblock"><span class="time">14:00</span><div><h3>Gyeongju National Museum</h3><p>Air-conditioned, easy pacing, Silla-dynasty artifacts.</p></div></li>
-        <li class="tblock"><span class="time">15:30</span><div><h3>Cheomseongdae Observatory</h3><p>Quick photo stop — oldest surviving observatory in East Asia.</p></div></li>
-        <li class="tblock"><span class="time">16:00</span><div><h3>Daereungwon Tomb Complex</h3><p>Flat, walkable park among royal burial mounds.</p></div></li>
-        <li class="tblock"><span class="time">17:00–18:30</span><div><h3>Donggung Palace &amp; Wolji Pond</h3><p>Lights come on around dusk — the reflection shot is the reason to time it this way.</p></div></li>
-        <li class="tblock"><span class="time">19:00</span><div><h3>Dinner in Gyeongju</h3></div></li>
-        <li class="tblock"><span class="time">20:45</span><div><h3>Taxi to Singyeongju Station</h3></div></li>
-        <li class="tblock"><span class="time">21:20</span><div><h3>KTX Singyeongju → Seoul</h3><p>~2h10m.</p></div></li>
-        <li class="tblock"><span class="time">23:30</span><div><h3>Arrive Seoul, taxi to hotel, check in</h3></div></li>
+        <li class="tblock"><span class="time">08:00</span><div><h3>Breakfast, leave luggage at hotel</h3><p>Confirm with the front desk if bags can stay in-room or need to go to storage for the day.</p></div></li>
+        <li class="tblock"><span class="time">08:30</span><div><h3>KTX Busan → Singyeongju</h3><p>~20–30 min.</p></div></li>
+        <li class="tblock"><span class="time">09:15</span><div><h3>Arrive Gyeongju, taxi to Bulguksa</h3></div></li>
+        <li class="tblock"><span class="time">09:45–11:15</span><div><h3>Bulguksa Temple</h3><p>UNESCO-listed, Korea's best-known Buddhist temple.</p></div></li>
+        <li class="tblock"><span class="time">11:15–12:15</span><div><h3>Seokguram Grotto</h3><p>Shuttle up, short uphill walk at the top.</p><span class="tip">Optional to skip if the group's tired — Bulguksa alone justifies the trip</span></div></li>
+        <li class="tblock"><span class="time">12:45</span><div><h3>Lunch in Gyeongju</h3><p>Local specialty: ssambap (leaf-wrapped rice) or bibim-guksu.</p></div></li>
+        <li class="tblock"><span class="time">14:15</span><div><h3>Gyeongju National Museum</h3><p>Air-conditioned, easy pacing, Silla-dynasty artifacts.</p></div></li>
+        <li class="tblock"><span class="time">15:45</span><div><h3>Cheomseongdae Observatory</h3><p>Quick photo stop — oldest surviving observatory in East Asia.</p></div></li>
+        <li class="tblock"><span class="time">16:15</span><div><h3>Daereungwon Tomb Complex</h3><p>Flat, walkable park among royal burial mounds.</p></div></li>
+        <li class="tblock"><span class="time">17:00–18:15</span><div><h3>Donggung Palace &amp; Wolji Pond</h3><p>Lights come on around dusk — the reflection shot is the reason to time it this way.</p></div></li>
+        <li class="tblock"><span class="time">18:45</span><div><h3>Early dinner in Gyeongju</h3></div></li>
+        <li class="tblock"><span class="time">20:15</span><div><h3>KTX Singyeongju → Busan</h3><p>~20–30 min.</p></div></li>
+        <li class="tblock"><span class="time">21:00</span><div><h3>Back at the Busan hotel — bags already there</h3></div></li>
       </ol>
     </div>
   </section>
 
   <section class="day-card" id="d4">
-    <div class="stub"><div class="num">04</div><div class="date">WED<br>24 SEP</div><div class="loc">Seoul</div></div>
+    <div class="stub"><div class="num">04</div><div class="date">WED<br>23 SEP</div><div class="loc transit">Busan → Seoul</div></div>
     <div class="content">
-      <h2>Palace &amp; hanok</h2>
-      <p class="day-summary">A slower morning after last night's late arrival.</p>
+      <h2>Busan → Seoul, unrushed</h2>
+      <p class="day-summary">A clean travel day — bags packed once, one train, no sightseeing squeezed in around it.</p>
       <ol class="timeline">
-        <li class="tblock"><span class="time">09:30</span><div><h3>Breakfast</h3></div></li>
-        <li class="tblock"><span class="time">10:30</span><div><h3>Gyeongbokgung Palace</h3><p>Check the day's changing-of-the-guard ceremony time (roughly 10:00 / 14:00).</p></div></li>
-        <li class="tblock"><span class="time">12:30</span><div><h3>Lunch near the palace</h3></div></li>
-        <li class="tblock"><span class="time">13:30</span><div><h3>Bukchon Hanok Village</h3><p>Leisurely walk through traditional houses.</p></div></li>
-        <li class="tblock"><span class="time">15:00</span><div><h3>Insadong</h3><p>Tea houses, crafts, souvenirs.</p></div></li>
-        <li class="tblock"><span class="time">17:30</span><div><h3>Cheonggyecheon Stream walk</h3><p>Flat, shaded, easy on the legs.</p></div></li>
-        <li class="tblock"><span class="time">19:00</span><div><h3>Dinner — Myeongdong or Insadong</h3></div></li>
+        <li class="tblock"><span class="time">09:00</span><div><h3>Breakfast, check out</h3></div></li>
+        <li class="tblock"><span class="time">10:00</span><div><h3>KTX Busan → Seoul</h3><p>~2h30m direct — no Gyeongju stop needed, you already covered it yesterday luggage-free.</p></div></li>
+        <li class="tblock"><span class="time">12:30</span><div><h3>Arrive Seoul, transfer to hotel</h3></div></li>
+        <li class="tblock"><span class="time">13:30</span><div><h3>Check in, lunch nearby</h3></div></li>
+        <li class="tblock"><span class="time">15:00</span><div><h3>Easy afternoon — Cheonggyecheon Stream walk</h3><p>Flat, shaded, low effort after a travel morning.</p></div></li>
+        <li class="tblock"><span class="time">18:30</span><div><h3>Dinner — Myeongdong</h3></div></li>
       </ol>
     </div>
   </section>
 
   <section class="day-card" id="d5">
-    <div class="stub"><div class="num">05</div><div class="date">THU<br>25 SEP</div><div class="loc">Seoul</div></div>
+    <div class="stub"><div class="num">05</div><div class="date">THU<br>24 SEP</div><div class="loc">Seoul</div></div>
+    <div class="content">
+      <h2>Palace &amp; hanok</h2>
+      <ol class="timeline">
+        <li class="tblock"><span class="time">09:30</span><div><h3>Breakfast</h3></div></li>
+        <li class="tblock"><span class="time">10:15</span><div><h3>Gwanghwamun Square</h3><p>The plaza right in front of the palace — statues of King Sejong and Admiral Yi Sun-sin, easy first stop.</p></div></li>
+        <li class="tblock"><span class="time">10:30</span><div><h3>Gyeongbokgung Palace</h3><p>Check the day's changing-of-the-guard ceremony time (roughly 10:00 / 14:00).</p></div></li>
+        <li class="tblock"><span class="time">12:30</span><div><h3>Lunch near the palace</h3></div></li>
+        <li class="tblock"><span class="time">13:30</span><div><h3>Bukchon Hanok Village</h3><p>Leisurely walk through traditional houses.</p></div></li>
+        <li class="tblock"><span class="time">15:00</span><div><h3>Insadong</h3><p>Tea houses, crafts, souvenirs.</p></div></li>
+        <li class="tblock"><span class="time">17:00</span><div><h3>Optional: Namdaemun Market</h3><p>~15 min from Insadong — Korea's oldest traditional market, street food stalls.</p></div></li>
+        <li class="tblock"><span class="time">19:00</span><div><h3>Dinner — Insadong or Namdaemun</h3></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="day-card" id="d6">
+    <div class="stub"><div class="num">06</div><div class="date">FRI<br>25 SEP</div><div class="loc">Seoul</div></div>
     <div class="content">
       <h2>Views &amp; shopping</h2>
       <p class="day-summary">Last full day — keep it light, pack in the evening.</p>
@@ -305,22 +272,32 @@
     </div>
   </section>
 
-  <section class="day-card" id="d6">
-    <div class="stub"><div class="num">06</div><div class="date">FRI<br>26 SEP</div><div class="loc">Seoul</div></div>
+  <section class="day-card" id="d7">
+    <div class="stub"><div class="num">07</div><div class="date">SAT<br>26 SEP</div><div class="loc transit">Gapyeong (day trip)</div></div>
     <div class="content">
-      <h2>Buffer day</h2>
-      <p class="day-summary">Deliberately open — pick one, keep the pace light before tomorrow's flight.</p>
+      <h2>Nami Island &amp; Rail Park</h2>
+      <span class="flag">⚑ Book the rail bike now — it sells out</span>
+      <p class="day-summary">A change of pace from temples and cities — flat paths, scenic countryside, a relaxed ferry ride, and a light group activity everyone can do together.</p>
       <ol class="timeline">
-        <li class="tblock"><span class="time">09:00</span><div><h3>Late breakfast</h3></div></li>
-        <li class="tblock"><span class="time">10:00</span><div><h3>Pick one</h3><p>DMZ tour (book ahead, full day) · Dongdaemun shopping · Lotte World · or simply rest.</p></div></li>
-        <li class="tblock"><span class="time">18:00</span><div><h3>Early dinner near the hotel</h3></div></li>
-        <li class="tblock"><span class="time">20:00</span><div><h3>Pack</h3><p>Get bags sorted tonight, not tomorrow morning.</p></div></li>
+        <li class="tblock"><span class="time">08:00</span><div><h3>Breakfast, early start</h3></div></li>
+        <li class="tblock"><span class="time">08:45</span><div><h3>ITX-Cheongchun train Seoul → Gapyeong</h3><p>~1h10m, direct from Yongsan or Cheongnyangni.</p></div></li>
+        <li class="tblock"><span class="time">10:00</span><div><h3>Transfer to Nami Island ferry pier</h3><p>Local bus or taxi from Gapyeong Station, ~20 min.</p></div></li>
+        <li class="tblock"><span class="time">10:30</span><div><h3>Ferry to Nami Island</h3><p>Short crossing, ~5 min.</p><span class="tip">Ticket: ~₩13,000 round trip + island entry — buy on-site or via Klook/Trazy in advance</span></div></li>
+        <li class="tblock"><span class="time">10:45–13:00</span><div><h3>Nami Island — tree-lined paths, riverside walk</h3><p>Flat, easy walking — no stairs or steep climbs.</p></div></li>
+        <li class="tblock"><span class="time">13:15</span><div><h3>Lunch on the island or back in Gapyeong</h3></div></li>
+        <li class="tblock"><span class="time">14:30</span><div><h3>Transfer to Gapyeong Rail Park</h3></div></li>
+        <li class="tblock"><span class="time">15:00–16:00</span><div><h3>Rail bike ride</h3><p>Seated, gentle pedaling along the old rail line and river bridge — easy pace for the whole group.</p><span class="tip">Book ahead via Trazy, Klook, or GetYourGuide — this is the one piece that sells out</span></div></li>
+        <li class="tblock"><span class="time">16:30</span><div><h3>Free time / snacks near the rail park</h3></div></li>
+        <li class="tblock"><span class="time">17:30</span><div><h3>ITX-Cheongchun back to Seoul</h3></div></li>
+        <li class="tblock"><span class="time">19:00</span><div><h3>Dinner in Seoul</h3></div></li>
+        <li class="tblock"><span class="time">20:30</span><div><h3>Pack</h3><p>Get bags sorted tonight, not tomorrow morning.</p></div></li>
       </ol>
+      <p class="option-note"><b>Alternatives if the group prefers something else:</b> Suwon/Hwaseong Fortress (another historical site, more walking on fortress walls — but Gyeongju already covers this ground); Seongsu-dong (design/café district, lower effort, no advance booking needed); or the original open-day standbys — DMZ tour, Dongdaemun shopping, Lotte World.</p>
     </div>
   </section>
 
-  <section class="day-card" id="d7">
-    <div class="stub"><div class="num">07</div><div class="date">SAT<br>27 SEP</div><div class="loc transit">Seoul → Incheon</div></div>
+  <section class="day-card" id="d8">
+    <div class="stub"><div class="num">08</div><div class="date">SUN<br>27 SEP</div><div class="loc transit">Seoul → Incheon</div></div>
     <div class="content">
       <h2>Departure</h2>
       <ol class="timeline">
@@ -336,17 +313,25 @@
       <h3>⚑ Two things to check first</h3>
       <ul>
         <li><b>Chuseok 2026</b> falls close to this window — confirm the exact dates, since it affects KTX availability and whether some sites/restaurants close for the holiday.</li>
-        <li><b>Day 3 is long</b> — Gyeongju plus a late KTX into Seoul. Cutting Seokguram Grotto is the easiest way to shorten it if the group needs it.</li>
+        <li><b>Day 1 is long</b> — everyone lands, then straight to Busan by train same day. Worth it to avoid a second flight, but confirm actual flight times to fine-tune the KTX booking.</li>
+        <li><b>Day 3 (Gyeongju) also runs long</b> — Seokguram Grotto is the easiest thing to cut if the group's tired; Bulguksa alone justifies the day.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Trains to book early</h3>
       <ul>
-        <li>ICN → Gimhae, domestic flight (Day 1, all 4 together)</li>
-        <li>Busan → Singyeongju, KTX (Day 3 morning)</li>
-        <li>Singyeongju → Seoul, KTX (Day 3 night)</li>
+        <li>Seoul → Busan, KTX (Day 1, all 4 together)</li>
+        <li>Busan ⇄ Singyeongju, KTX round trip (Day 3, no luggage)</li>
+        <li>Busan → Seoul, KTX (Day 4)</li>
       </ul>
       <p style="font-size:12.5px;margin-top:10px;">Book via Korail or the Klook/Trainpal apps — this close to Chuseok, don't wait.</p>
+    </div>
+    <div class="card warn">
+      <h3>⚑ Gapyeong day (Day 7) — book ahead</h3>
+      <ul>
+        <li><b>Rail bike</b> — sells out. Book via Trazy, Klook, or GetYourGuide as soon as the date's confirmed.</li>
+        <li>Nami Island ferry ticket — flexible, buy on-site or in advance via Klook/Trazy.</li>
+      </ul>
     </div>
   </div>
 
